@@ -1,0 +1,9 @@
+package Week06_03;
+
+enum Type {
+	MEAT, FISH, OTHER
+}
+
+public class Test {
+	public static void main
+}

@@ -1,0 +1,40 @@
+package Week03_02;
+
+import javax.swing.*;
+
+import Week03_01.RegisterFrame;
+
+public class Converter extends JFrame{
+	public Converter() {
+		setSize(400, 300);
+		setTitle("Mile->Km");
+		setVisible(true);
+		
+		JPanel panel = new JPanel();
+		add(panel);
+		
+		JLabel label1 = new JLabel("마일을 입력하시오");
+		JTextField field1 = new JTextField(15);
+		JLabel label2 = new JLabel("->");
+		JTextField field2 = new JTextField(15);
+		JButton button = new JButton("변환");
+		
+		button.addActionListener(e -> {
+			String mileStr = field1.getText();
+			Double mile = Double.valueOf(mileStr);
+			Double km = mile * 1.609344;
+			String kmStr = String.valueOf(km);
+			field2.setText(kmStr + "km");
+		} );
+		
+		panel.add(label1);
+		panel.add(field1);
+		panel.add(label2);
+		panel.add(field2);
+		panel.add(button);
+	}
+	
+	public static void main(String argv[]) {
+		Converter c = new Converter();
+	}
+}

@@ -1,0 +1,17 @@
+package Week03_03;
+
+import javax.swing.*;
+
+public class CarProgram extends JFrame{
+	public CarProgram() {
+		setSize(400, 300);
+		setTitle("Car");
+		setVisible(true);
+		
+		JPanel panel = new JPanel();
+		add(panel);
+		
+		JImage 
+	}
+
+}

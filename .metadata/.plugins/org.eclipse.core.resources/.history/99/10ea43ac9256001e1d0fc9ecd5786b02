@@ -1,0 +1,9 @@
+package Week03_02;
+
+import javax.swing.*;
+
+public class Converter {
+	setSize(300, 200);
+	setTitle("Register Frame");
+	setVisible(true);
+}
