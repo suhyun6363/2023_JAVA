@@ -37,6 +37,7 @@ public class UserInform {
 			System.out.println("입력이 끝났으면 0, 계속하려면 1: ");
 			num2 = s.nextInt();
 			if(num2 == 0) {
+				outputStream.close();
 				break;
 			}
 		}
@@ -50,5 +51,6 @@ public class UserInform {
 				System.out.println("해당 사용자 전화번호 : " + userInfo.getTel());
 			}
 		}
+		s.close();
 	}
 }
